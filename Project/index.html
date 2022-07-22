@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;600;700;800;900&family=Source+Code+Pro:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar bg">
+        <div class="container-fluid">
+          <form id="searchForm" class="d-flex" role="search">
+            <input
+              id="cityInput"
+              class="form-control me-2"
+              type="search"
+              placeholder="Enter a city"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline searchButton" type="submit">
+              Search
+            </button>
+            <button class="locationButton" id="currentLokationButton">
+              Current location
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="row currentWeather">
+      <div class="col">
+        <h1 id="city"></h1>
+        <h3 id="date"></h3>
+      </div>
+      <div class="col currentDegrees"><span id="currentD"></span>°C</div>
+      <div class="col">
+        <img
+          class="currentEmoji"
+          src="pictures/rain.svg"
+          alt="rain"
+          width="100px"
+        />
+        <div class="weatherDescription" id="description"></div>
+      </div>
+    </div>
+
+    <div class="row week">
+      <div class="col sat">
+        <p class="day">Sat.yy</p>
+        <img src="pictures/mostlySunny.svg.svg" alt="mostlySunny" />
+        <br />
+        27°C
+      </div>
+      <div class="col sun">
+        <p class="day">Sun.</p>
+        <img src="pictures/mostlySunny.svg.svg" alt="mostlySunny" /><br />
+        28°C
+      </div>
+      <div class="col mon">
+        <p class="day">Mon.</p>
+        <img src="pictures/storm.svg.svg" alt="storm" />
+        <br />
+        25°C
+      </div>
+      <div class="col tue">
+        <p class="day">Tue.</p>
+        <img src="pictures/rain.svg" alt="rain" /><br />
+        22°C
+      </div>
+      <div class="col wed">
+        <p class="day">Wed.</p>
+        <img src="pictures/showers.svg.svg" alt="showers" /><br />
+        25°C
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

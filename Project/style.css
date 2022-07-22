@@ -1,0 +1,123 @@
+body {
+  margin: 20px auto;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(148, 241, 246) 0%,
+    rgb(148, 189, 246) 100.7%
+  );
+  text-align: center;
+  padding: 20px 80px 20px 80px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(20, 45, 79);
+  max-width: 700px;
+}
+.navbar {
+  padding: 0 100px;
+  margin: 0 10px;
+}
+.searchButton {
+  border: 1px solid #000;
+  color: #000;
+  transition: all 150ms ease-in-out;
+}
+.searchButton:hover {
+  background: #598abe;
+}
+
+.locationButton {
+  background-color: #94dbf6;
+  border: 1px solid #000;
+  border-radius: 7px;
+  padding: 5px 10px 5px 10px;
+  margin-left: 10px;
+  color: #000;
+  transition: all 150ms ease-in-out;
+}
+.locationButton:hover {
+  background: #598abe;
+}
+.currentWeather {
+  background-color: rgb(148, 205, 246);
+  border: 5px solid rgb(32, 74, 135, 0.3);
+  border-radius: 8px;
+  padding: 20px 20px 20px 20px;
+  transition: all 150ms ease-in-out;
+  margin-top: 20px;
+}
+.currentWeather:hover {
+  background-color: rgb(208, 225, 175, 0.8);
+  cursor: pointer;
+}
+h1 {
+  font-size: 52px;
+  font-weight: 500;
+  padding: 8px 8px 4px 8px;
+  text-align: center;
+}
+h3 {
+  padding: 8px 8px 8px 8px;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 5px 0 5px;
+}
+.currentDegrees {
+  font-size: 52px;
+  text-align: center;
+  text-shadow: 3px 3px 3px #888a85;
+  padding: 8px 10px 10px 10px;
+  position: relative;
+  top: 15px;
+}
+.currentEmoji {
+  padding-top: 0.5px;
+}
+.weatherDescription {
+  font-size: 18px;
+  padding: 0.5px 8px 8px 8px;
+  text-decoration: underline;
+  position: relative;
+  bottom: 10px;
+}
+
+.week {
+  margin-top: 40px;
+}
+.sat,
+.sun,
+.mon,
+.tue,
+.wed {
+  background-color: rgb(148, 205, 246);
+  border: 2px solid rgb(32, 74, 135, 0.3);
+  border-radius: 8px;
+  padding: 20px 20px 20px 20px;
+  transition: all 150ms ease-in-out;
+  margin: 40px 10px 10px 10px;
+  font-size: 18px;
+}
+.sat:hover {
+  background-color: rgb(208, 225, 175, 0.8);
+  cursor: pointer;
+}
+.sun:hover {
+  background-color: rgb(208, 225, 175, 0.8);
+  cursor: pointer;
+}
+.mon:hover {
+  background-color: rgb(208, 225, 175, 0.8);
+  cursor: pointer;
+}
+.tue:hover {
+  background-color: rgb(208, 225, 175, 0.8);
+  cursor: pointer;
+}
+.wed:hover {
+  background-color: rgb(208, 225, 175, 0.8);
+  cursor: pointer;
+}
+
+.day {
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
