@@ -28,7 +28,6 @@ let months = [
 
 let month = months[currentTime.getMonth()];
 currentDate.innerHTML = `${day} ${date} ${month} ${hours}:${minutes}`;
-
 function searchCity(city) {
   let apiKey = "752a3b7c84950701295b5755aa7ad901";
 
@@ -46,6 +45,7 @@ function displayWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
+  );
   );
 }
 
