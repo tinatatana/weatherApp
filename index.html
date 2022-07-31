@@ -49,7 +49,15 @@
         <h1 id="city"></h1>
         <h3 id="date"></h3>
       </div>
-      <div class="col currentDegrees"><span id="currentD"></span>°C</div>
+      <div class="col currentDegrees">
+        <span id="currentD"></span> <span class="cf">°C|°F</span>
+        <div>
+          <ul class="conditions">
+            <li>Humidity: <span id="humidity"> </span> %</li>
+            <li>Wind:<span id="wind"> </span> km/h</li>
+          </ul>
+        </div>
+      </div>
       <div class="col">
         <img
           class="currentEmoji"
