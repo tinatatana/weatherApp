@@ -66,6 +66,17 @@ h3 {
   text-shadow: 3px 3px 3px #888a85;
   padding: 1px 5px 10px 5px;
   margin-top: 1px;
+  text-decoration: none;
+}
+.active {
+  color: rgb(32, 74, 135);
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+  color: rgb(32, 74, 135);
+  text-decoration: none;
 }
 .cf {
   font-size: 20px;
