@@ -104,14 +104,10 @@ h3 {
   bottom: 10px;
 }
 
-.week {
+.forecast-week {
   margin-top: 40px;
 }
-.sat,
-.sun,
-.mon,
-.tue,
-.wed {
+.sat {
   background-color: rgb(148, 205, 246);
   border: 2px solid rgb(32, 74, 135, 0.3);
   border-radius: 8px;
@@ -121,22 +117,6 @@ h3 {
   font-size: 18px;
 }
 .sat:hover {
-  background-color: rgb(208, 225, 175, 0.8);
-  cursor: pointer;
-}
-.sun:hover {
-  background-color: rgb(208, 225, 175, 0.8);
-  cursor: pointer;
-}
-.mon:hover {
-  background-color: rgb(208, 225, 175, 0.8);
-  cursor: pointer;
-}
-.tue:hover {
-  background-color: rgb(208, 225, 175, 0.8);
-  cursor: pointer;
-}
-.wed:hover {
   background-color: rgb(208, 225, 175, 0.8);
   cursor: pointer;
 }

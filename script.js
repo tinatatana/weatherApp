@@ -90,6 +90,25 @@ function displayCelciusTemperature(event) {
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHtml = `<div class="row">`;
+  let days = ["Thu.", "Fri.", "Sat."];
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class="col-2 sat">
+        <div class="day">${day}</div>
+        <img src="pictures/mostlySunny.svg.svg" alt="mostlySunny" />
+        <br />
+        <span class="maxtemp">25°C</span> <span class="mintemp">18°C</span>
+      </div>`;
+    forecastHtml = forecastHtml + ` </div>`;
+
+    forecastElement.innerHTML = forecastHtml;
+  });
+}
 
 let searchForm = document.querySelector("#searchForm");
 
@@ -103,4 +122,5 @@ let celciusTemperature = null;
 
 let celciusLink = document.querySelector("#celcius");
 celciusLink.addEventListener("click", displayCelciusTemperature);
+displayForecast();
 searchCity("Kyiv");
