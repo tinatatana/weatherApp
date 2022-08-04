@@ -69,18 +69,9 @@ h3 {
   margin-top: 1px;
   text-decoration: none;
 }
-.active {
-  color: rgb(32, 74, 135);
-  cursor: default;
-  text-decoration: none;
-}
-.active:hover {
-  text-decoration: none;
-  color: rgb(32, 74, 135);
-  text-decoration: none;
-}
-.cf {
-  font-size: 20px;
+
+.celcius {
+  font-size: 30px;
   text-align: center;
   text-shadow: 1px 1px 1px #888a85;
   padding: 8px 10px 15px 5px;
