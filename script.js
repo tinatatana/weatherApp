@@ -98,24 +98,38 @@ function displayCelciusTemperature(event) {
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
 }
+function formatForecastDate(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun.", "Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat."];
+  return days[day];
+}
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHtml = `<div class="row">`;
-  let days = ["Thu.", "Fri.", "Sat."];
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `
-      <div class="col-2 sat">
-        <div class="day">${day}</div>
-        <img src="pictures/mostlySunny.svg.svg" alt="mostlySunny" />
-        <br />
-        <span class="maxtemp">25°C</span> <span class="mintemp">18°C</span>
-      `;
-    forecastHtml = forecastHtml + ` </div>`;
 
-    forecastElement.innerHTML = forecastHtml;
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHtml =
+        forecastHtml +
+        `
+      <div class="col-2 sat">
+        <div class="day">${formatForecastDate(forecastDay.dt)}</div>
+        <img src= "http://openweathermap.org/img/wn/${
+          forecastDay.weather[0].icon
+        }.png" alt="">
+        <br />
+        <span class="maxtemp">${Math.round(
+          forecastDay.temp.max
+        )}°C</span> <span class="mintemp">${Math.round(
+          forecastDay.temp.min
+        )}°C</span>
+      `;
+      forecastHtml = forecastHtml + ` </div>`;
+
+      forecastElement.innerHTML = forecastHtml;
+    }
   });
 }
 
