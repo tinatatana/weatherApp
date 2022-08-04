@@ -57,7 +57,7 @@ function displayWeather(response) {
 
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
+    `pictures/${response.data.weather[0].icon}.svg`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   celciusTemperature = response.data.main.temp;
@@ -98,9 +98,9 @@ function displayForecast(response) {
         `
       <div class="col-2 sat">
         <div class="day">${formatForecastDate(forecastDay.dt)}</div>
-        <img src= "http://openweathermap.org/img/wn/${
-          forecastDay.weather[0].icon
-        }.png" alt="">
+         <img src="pictures/${
+           forecastDay.weather[0].icon
+         }.svg" class="forecast-icon" id="icon" width="48" />
         <br />
         <span class="maxtemp">${Math.round(
           forecastDay.temp.max
