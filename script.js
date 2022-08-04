@@ -35,6 +35,13 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "752a3b7c84950701295b5755aa7ad901";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
 function displayWeather(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -56,6 +63,7 @@ function displayWeather(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   celciusTemperature = response.data.main.temp;
+  getForecast(response.data.coord);
 }
 
 function handleSubmit(event) {
@@ -90,7 +98,8 @@ function displayCelciusTemperature(event) {
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
 }
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHtml = `<div class="row">`;
   let days = ["Thu.", "Fri.", "Sat."];
@@ -122,5 +131,5 @@ let celciusTemperature = null;
 
 let celciusLink = document.querySelector("#celcius");
 celciusLink.addEventListener("click", displayCelciusTemperature);
-displayForecast();
+
 searchCity("Kyiv");
