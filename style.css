@@ -9,8 +9,7 @@ body {
   padding: 20px 80px 20px 80px;
   font-family: "Roboto Condensed", sans-serif;
   color: rgb(20, 45, 79);
-  max-width: 700px;
-  min-width: 100px;
+  max-width: 750px;
 }
 .navbar {
   padding: 0 100px;

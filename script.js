@@ -103,7 +103,7 @@ function displayForecast() {
         <img src="pictures/mostlySunny.svg.svg" alt="mostlySunny" />
         <br />
         <span class="maxtemp">25°C</span> <span class="mintemp">18°C</span>
-      </div>`;
+      `;
     forecastHtml = forecastHtml + ` </div>`;
 
     forecastElement.innerHTML = forecastHtml;
