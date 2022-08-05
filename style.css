@@ -11,12 +11,17 @@ body {
   color: rgb(20, 45, 79);
   max-width: 750px;
 }
+.tiledBackground {
+  background-image: url(pictures/sky.jpg.jpg);
+  background-size: cover;
+}
 .navbar {
   padding: 0 100px;
   margin: 0 10px;
   min-width: sw;
 }
 .searchButton {
+  background-color: #94dbf6;
   border: 1px solid #000;
   color: #000;
   transition: all 150ms ease-in-out;
@@ -41,50 +46,54 @@ body {
   background-color: rgb(148, 205, 246);
   border: 5px solid rgb(32, 74, 135, 0.3);
   border-radius: 8px;
-  padding: 20px 20px 20px 20px;
   transition: all 150ms ease-in-out;
   margin-top: 20px;
+  padding: 20px, 20px, 20px, 20px;
 }
 .currentWeather:hover {
   background-color: rgb(208, 225, 175, 0.8);
   cursor: pointer;
 }
 h1 {
-  font-size: 52px;
+  font-size: 50px;
   font-weight: 500;
-  padding: 8px 8px 4px 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
   text-align: center;
+  text-shadow: 3px 3px 2px #888a85;
 }
 h3 {
-  padding: 8px 8px 8px 8px;
+  padding: 20px, 20px, 20px, 20px;
   font-size: 22px;
   text-align: center;
-  margin: 0 5px 0 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .currentDegrees {
   font-size: 55px;
-
   text-shadow: 3px 3px 3px #888a85;
-  padding: 1px 5px 10px 5px;
-  margin-top: 1px;
   text-decoration: none;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .celcius {
-  font-size: 30px;
-  text-align: center;
+  font-size: 35px;
+
   text-shadow: 1px 1px 1px #888a85;
-  padding: 8px 10px 15px 5px;
+
   position: relative;
-  bottom: 26px;
+  bottom: 16px;
 }
 .conditions {
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
-  margin-top: 10px;
+  line-height: 32px;
+  text-shadow: none;
 }
 .currentEmoji {
-  padding-top: 0.5px;
+  padding-top: 20px;
 }
 .weatherDescription {
   font-size: 18px;
