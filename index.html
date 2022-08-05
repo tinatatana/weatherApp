@@ -23,55 +23,65 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="tiledBackground">
-      <div class="container">
-        <nav class="navbar bg">
-          <div class="container-fluid">
-            <form id="searchForm" class="d-flex" role="search">
-              <input
-                id="cityInput"
-                class="form-control me-2"
-                type="search"
-                placeholder="Enter a city"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline searchButton" type="submit">
-                Search
-              </button>
-              <button class="locationButton" id="currentLokationButton">
-                Current location
-              </button>
-            </form>
-          </div>
-        </nav>
-      </div>
-      <div class="row currentWeather">
-        <div class="col-4">
-          <h1 id="city"></h1>
-          <h3 id="date"></h3>
+    <div class="container">
+      <nav class="navbar bg">
+        <div class="container-fluid">
+          <form id="searchForm" class="d-flex" role="search">
+            <input
+              id="cityInput"
+              class="form-control me-2"
+              type="search"
+              placeholder="Enter a city"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline searchButton" type="submit">
+              Search
+            </button>
+            <button class="locationButton" id="currentLokationButton">
+              Current location
+            </button>
+          </form>
         </div>
-        <div class="col-4 currentDegrees">
-          <span id="currentD"></span>
-          <span class="celcius">°C </span>
+      </nav>
+    </div>
+    <div class="row currentWeather">
+      <div class="col">
+        <h1 id="city"></h1>
+        <h3 id="date"></h3>
+      </div>
+      <div class="col currentDegrees">
+        <span id="currentD"></span>
+        <span class="celcius">°C </span>
 
-          <div>
-            <ul class="conditions">
-              <li>Humidity: <span id="humidity"> </span> %</li>
-              <li>Wind:<span id="wind"> </span> km/h</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-4">
-          <img id="icon" class="currentEmoji" src="" alt="rain" width="100px" />
-          <div class="weatherDescription" id="description"></div>
+        <div>
+          <ul class="conditions">
+            <li>
+              <span class="humidityEmoji"
+                ><img src="pictures/humidity.svg" alt="humidity" width="25px"
+              /></span>
+              Humidity: <span id="humidity"> </span> %
+            </li>
+            <li>
+              <span class="windSpeedEmoji"
+                ><img
+                  src="pictures/windSpeed.svg"
+                  alt="windSpeed"
+                  width="25px" /></span
+              >Wind: <span id="wind"> </span> km/h
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="col">
+        <img id="icon" class="currentEmoji" src="" alt="rain" width="100px" />
+        <div class="weatherDescription" id="description"></div>
+      </div>
+    </div>
 
-      <div class="forecast-week" id="forecast"></div>
-      <div class="source">
-        <a href="https://github.com/tinatatana/weatherApp">Open-source code</a>
-        by Kristina Poliukhovych
-      </div>
+    <div class="forecast-week" id="forecast"></div>
+    <div class="source">
+      <a href="https://github.com/tinatatana/weatherApp">Open-source code</a>
+      by Kristina Poliukhovych
     </div>
   </body>
   <script src="script.js"></script>
