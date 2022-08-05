@@ -64,13 +64,21 @@ h1 {
 
   max-block-size: none;
 }
+.update {
+  margin: 20px, 10px;
+}
 h3 {
   padding: 20px, 20px, 20px, 20px;
   font-size: 22px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 20px;
   padding-left: 20px;
+  text-decoration: underline;
+}
+.thermometerEmoji {
+  position: relative;
+  left: 13px;
 }
 .currentDegrees {
   font-size: 55px;
@@ -78,7 +86,8 @@ h3 {
   text-decoration: none;
   text-align: center;
   margin-top: 15px;
-  padding: 20px, 20px, 20px, 20px;
+
+  padding: 20px, 20px, 20px, 10px;
 }
 
 .celcius {
@@ -106,7 +115,6 @@ h3 {
   font-size: 22px;
   text-align: center;
   text-decoration: underline;
-  margin: 0 auto;
 }
 
 .forecast-week {
