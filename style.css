@@ -10,6 +10,10 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   color: rgb(20, 45, 79);
   max-width: 750px;
+  background-image: url(pictures/backgroung.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar {
@@ -18,17 +22,17 @@ body {
   min-width: sw;
 }
 .searchButton {
-  background-color: #94dbf6;
+  background-color: rgba(148, 205, 246, 0.507);
   border: 1px solid #000;
   color: #000;
   transition: all 150ms ease-in-out;
 }
 .searchButton:hover {
-  background: #598abe;
+  background: #fbd0bf;
 }
 
 .locationButton {
-  background-color: #94dbf6;
+  background-color: rgba(148, 205, 246, 0.507);
   border: 1px solid #000;
   border-radius: 7px;
   padding: 5px 10px 5px 10px;
@@ -37,18 +41,18 @@ body {
   transition: all 150ms ease-in-out;
 }
 .locationButton:hover {
-  background: #598abe;
+  background: #fbd0bf;
 }
 
 .currentWeather {
-  background-color: rgb(148, 205, 246);
+  background-color: rgba(148, 205, 246, 0.321);
   border: 5px solid rgb(32, 74, 135, 0.3);
   border-radius: 8px;
   transition: all 150ms ease-in-out;
   margin-top: 20px;
 }
 .currentWeather:hover {
-  background-color: rgb(208, 225, 175, 0.8);
+  background-color: rgb(208, 225, 175, 0.507);
   cursor: pointer;
 }
 .col {
@@ -116,13 +120,14 @@ h3 {
   font-size: 22px;
   text-align: center;
   text-decoration: underline;
+  padding: 20px, 20px, 20px, 20px;
 }
 
 .forecast-week {
   margin-top: 40px;
 }
 .sat {
-  background-color: rgb(148, 205, 246);
+  background-color: rgba(148, 205, 246, 0.507);
   border: 2px solid rgb(32, 74, 135, 0.3);
   border-radius: 8px;
   padding: 20px 20px 20px 20px;
@@ -131,7 +136,7 @@ h3 {
   font-size: 18px;
 }
 .sat:hover {
-  background-color: rgb(208, 225, 175, 0.8);
+  background-color: rgb(208, 225, 175, 0.507);
   cursor: pointer;
 }
 
@@ -140,9 +145,7 @@ h3 {
   font-weight: 600;
   cursor: pointer;
 }
-.forecast-icon {
-  padding: 10px, 10px, 10px, 10px;
-}
+
 .mintemp {
   opacity: 0.7;
 }
