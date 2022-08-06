@@ -19,10 +19,6 @@ body {
 
   block-size: fit-content;
 }
-.app {
-  min-width: max-content;
-  min-height: max-content;
-}
 
 .navbar {
   padding: 0 100px;
