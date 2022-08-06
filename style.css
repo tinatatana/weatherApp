@@ -19,26 +19,21 @@ body {
 
   block-size: fit-content;
 }
-.container {
-  width: 100%;
-  height: 100%;
-  resize: none;
-  width: fit-content;
-
-  block-size: fit-content;
+.app {
+  min-width: max-content;
 }
 
 .navbar {
   padding: 0 100px;
   margin: 0 10px;
   resize: none;
+  width: fit-content;
 }
 .searchButton {
   background-color: rgb(232, 204, 199, 0.507);
   border: 1px solid #000;
   color: #000;
   transition: all 150ms ease-in-out;
-  line-height: 10px;
 }
 .searchButton:hover {
   background: rgb(208, 225, 175, 0.507);
@@ -52,7 +47,6 @@ body {
   margin-left: 10px;
   color: #000;
   transition: all 150ms ease-in-out;
-  line-height: 20px;
 }
 .locationButton:hover {
   background: rgb(208, 225, 175, 0.507);
@@ -149,6 +143,9 @@ h3 {
   transition: all 150ms ease-in-out;
   margin: 40px 10px 10px 10px;
   font-size: 18px;
+  width: fit-content;
+
+  block-size: fit-content;
 }
 .sat:hover {
   background-color: rgb(208, 225, 175, 0.507);
