@@ -27,7 +27,7 @@ body {
   width: fit-content;
 }
 .searchButton {
-  background-color: rgb(232, 204, 199, 0.507);
+  background-color: rgba(148, 205, 246, 0.507);
   border: 1px solid #000;
   color: #000;
   transition: all 150ms ease-in-out;
@@ -37,7 +37,7 @@ body {
 }
 
 .locationButton {
-  background-color: rgb(232, 204, 199, 0.507);
+  background-color: rgba(148, 205, 246, 0.507);
   border: 1px solid #000;
   border-radius: 7px;
   padding: 5px 10px 5px 10px;
