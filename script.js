@@ -92,7 +92,7 @@ function displayForecast(response) {
   let forecastHtml = `<div class="row">`;
 
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index < 5 && index > 0) {
       forecastHtml =
         forecastHtml +
         `
